@@ -1,0 +1,282 @@
+@Ecore(nsURI="http://www.example.org/ahp")
+@GenModel(
+	modelName="AHP",
+	prefix="AHP",
+	editDirectory="/ahp.edit/src-gen",
+	editorDirectory="/ahp.editor/src-gen",
+	testsDirectory="/ahp.tests/src-gen")
+package ahp
+
+import org.eclipse.emf.ecore.EDiagnosticChain
+import org.eclipse.emf.ecore.EMap
+import org.eclipse.emf.common.util.BasicDiagnostic
+import org.eclipse.emf.common.util.Diagnostic
+import org.eclipse.emf.ecore.plugin.EcorePlugin
+
+class Hierarchy
+{
+	contains Goal[1] goal opposite hierarchy
+	contains Criterion[+] criteria opposite hierarchy
+	contains Alternative[2..*] alternatives opposite hierarchy
+	contains Judgment<?>[] judgments opposite hierarchy
+	contains Priority[] priorities
+	contains Inconsistency[] inconsistencies
+	
+	op CriterionJudgment findJudgment(Goal goal, Criterion first, Criterion second)
+	{
+		judgments.filter(typeof(CriterionJudgment)).findFirst(j | j.goal == goal && j.first == first && j.second == second)
+	}
+	
+	op AlternativeJudgment findJudgment(Criterion criterion, Alternative first, Alternative second)
+	{
+		judgments.filter(typeof(AlternativeJudgment)).findFirst(j | j.criterion == criterion && j.first == first && j.second == second)
+	}
+	
+	op void updatePriorities()
+	{
+		priorities.clear
+		inconsistencies.clear
+
+		val mat = new JudgmentMatrix<Criterion>(criteria);
+		val criteriaJudgments = judgments.filter(typeof(CriterionJudgment)).filter(cj | cj.goal == goal)
+		for (judgment : criteriaJudgments) {
+			mat.set(judgment.first, judgment.second, judgment.weight)
+		}
+		for (criterion : criteria) {
+			val GoalCriterionPriority priority = AHPFactory.eINSTANCE.createGoalCriterionPriority
+			priority.goal = goal
+			priority.criterion = criterion
+			priority.value = mat.findEigenvectorElement(criterion)
+			priorities.add(priority)
+		}
+		val goalInconsistency = AHPFactory.eINSTANCE.createGoalInconsistency
+		goalInconsistency.goal = goal
+		goalInconsistency.value = mat.inconsistency
+		inconsistencies.add(goalInconsistency)
+
+		val mat2 = new Matrix(alternatives.size, criteria.size)
+
+		criteria.forEach[criterion, j|
+			val mat3 = new JudgmentMatrix<Alternative>(alternatives)
+			val alternativeJudgments = judgments.filter(typeof(AlternativeJudgment)).filter(aj | aj.criterion == criterion)
+			for (judgment : alternativeJudgments) {
+				mat3.set(judgment.first, judgment.second, judgment.weight)
+			}
+			val criterionInconsistency = AHPFactory.eINSTANCE.createCriterionInconsistency
+			criterionInconsistency.criterion = criterion
+			criterionInconsistency.value = mat3.inconsistency
+			inconsistencies.add(criterionInconsistency)
+
+			alternatives.forEach[alternative, i|
+				val CriterionAlternativePriority priority = AHPFactory.eINSTANCE.createCriterionAlternativePriority
+				priority.criterion = criterion
+				priority.alternative = alternative
+				priority.value = mat3.findEigenvectorElement(alternative)
+				priorities.add(priority)
+				mat2.set(i, j, priority.value)
+			]
+		]
+		
+		val mat4 = mat2.multiply(mat.eigenvector)
+		alternatives.forEach[alternative, i|
+			val GoalAlternativePriority priority = AHPFactory.eINSTANCE.createGoalAlternativePriority
+			priority.goal = goal
+			priority.alternative = alternative
+			priority.value = mat4.get(i)
+			priorities.add(priority)
+		]
+	}
+}
+
+interface Named
+{
+	String[1] name
+}
+
+class Goal extends Named
+{
+	container transient Hierarchy[1] hierarchy opposite goal
+
+	op GoalInconsistency getInconsistency()
+	{
+		hierarchy.inconsistencies.filter(typeof(GoalInconsistency))
+			.findFirst(p | p.goal == this)
+	}
+}
+
+class Criterion extends Named
+{
+	container transient Hierarchy[1] hierarchy opposite criteria
+	
+	op GoalCriterionPriority getPriority()
+	{
+		hierarchy.priorities.filter(typeof(GoalCriterionPriority))
+			.findFirst(p | p.goal == hierarchy.goal && p.criterion == this)
+	}
+
+	op CriterionInconsistency getInconsistency()
+	{
+		hierarchy.inconsistencies.filter(typeof(CriterionInconsistency))
+			.findFirst(p | p.criterion == this)
+	}
+}
+
+class Alternative extends Named
+{
+	container transient Hierarchy[1] hierarchy opposite alternatives
+	
+	op GoalAlternativePriority getPriority()
+	{
+		hierarchy.priorities.filter(typeof(GoalAlternativePriority))
+			.findFirst(p | p.goal == hierarchy.goal && p.alternative == this)
+	}
+	
+	op CriterionAlternativePriority getPriority(Criterion criterion)
+	{
+		hierarchy.priorities.filter(typeof(CriterionAlternativePriority))
+			.findFirst(p | p.criterion == criterion && p.alternative == this)
+	}
+}
+
+class CriterionAlternative
+{
+	refers Criterion[1] criterion
+	refers Alternative[1] alternative
+}
+
+// Judgments
+
+abstract class Judgment<T>
+{
+	container transient Hierarchy[1] hierarchy opposite judgments
+	refers T[1] first
+	refers T[1] second
+	Weight[1] weight = "1"
+	
+	op boolean checkOperandsAreDifferent(EDiagnosticChain diagnostics, EMap<Object, Object> context)
+	{
+		if (first != null && first == second && weight != 1) {
+      		if (diagnostics != null) {
+        		diagnostics.add(
+          			new BasicDiagnostic(
+            			Diagnostic.ERROR,
+            			"DIAGNOSTIC_SOURCE",
+            			0,
+            			"First and second must not be equal",
+            			null));
+      		}
+      		return false;
+    	}
+    	return true;
+	}
+	
+	op boolean checkInverseJudgment(EDiagnosticChain diagnostics, EMap<Object, Object> context)
+	{
+		if (inverseJudgment != null && inverseJudgment.weight != -weight) {
+      		if (diagnostics != null) {
+        		diagnostics.add(
+          			new BasicDiagnostic(
+            			Diagnostic.ERROR,
+            			"DIAGNOSTIC_SOURCE",
+            			0,
+            			"Wrong inverse judgment",
+            			null));
+      		}
+      		return false;
+    	}
+    	return true;
+	}
+	
+	op Judgment<?> getInverseJudgment()
+}
+
+class CriterionJudgment extends Judgment<Criterion>
+{
+	refers Goal[1] goal
+
+	op CriterionJudgment getInverseJudgment()
+	{
+		hierarchy.judgments.filter(typeof(CriterionJudgment))
+			.findFirst(j | j.goal == goal && j.first == second && j.second == first)
+	}
+}
+
+class AlternativeJudgment extends Judgment<Alternative>
+{
+	refers Criterion[1] criterion
+
+	op AlternativeJudgment getInverseJudgment()
+	{
+		hierarchy.judgments.filter(typeof(AlternativeJudgment))
+			.findFirst(j | j.criterion == criterion && j.first == second && j.second == first)
+	}
+}
+
+// Calculated entities
+
+abstract class Priority
+{
+	double[1] value
+}
+
+class GoalCriterionPriority extends Priority
+{
+	refers Goal[1] goal
+	refers Criterion[1] criterion
+}
+
+class CriterionAlternativePriority extends Priority
+{
+	refers Criterion[1] criterion
+	refers Alternative[1] alternative
+}
+
+class GoalAlternativePriority extends Priority
+{
+	refers Goal[1] goal
+	refers Alternative[1] alternative
+}
+
+abstract class Inconsistency
+{
+	double[1] value
+}
+
+class GoalInconsistency extends Inconsistency
+{
+	refers Goal[1] goal
+}
+
+class CriterionInconsistency extends Inconsistency
+{
+	refers Criterion[1] criterion
+}
+
+// Data types
+
+type Weight wraps int
+create
+{
+	if (it.matches("\\d+")) {
+		Integer.parseInt(it)
+	}
+	else if (it.matches("1\\s*/\\s*\\d+")) {
+		val result = Integer.parseInt(it.replaceFirst("1\\s*/\\s*", ""))
+		if (result <= 1) 1 else -result
+	}
+	else {
+		throw new NumberFormatException("The weight must be either n or 1/n")
+	}
+}
+convert
+{
+	if (it >= 1) {
+		it.toString
+	}
+	else if (it >= -1) {
+		"1"
+	}
+	else {
+		"1/" + (-it).toString
+	}
+}
