@@ -64,21 +64,17 @@ public class JudgmentMatrix<T> {
 	private void calc() throws Exception {
 		if (isDirty) {
 			Vector x = new Vector(dim, 1.0 / dim);
-			//Vector y = matrix.multiply(x);
-			//double sum = y.sum();
-			//x = y.div(sum);
-			//double curEigenvalue = sum / dim;
-			double curEigenvalue = 0, prevEigenvalue;
-			int i = 0;
-			do {
+			double curEigenvalue = 0;
+			double prevEigenvalue = 0;
+			for (int i = 0; i < 2 || Math.abs(curEigenvalue - prevEigenvalue) > PRECISION; i++) {
 				if (i >= MAX_ITERATIONS) {
 					throw new Exception(String.format("Eigenvector was not found after %d iterations", MAX_ITERATIONS));
 				}
-				prevEigenvalue = curEigenvalue;
 				Vector y = matrix.multiply(x);
+				prevEigenvalue = curEigenvalue;
 				curEigenvalue = y.sum();
 				x = y.div(curEigenvalue);
-			} while (i++ == 0 || Math.abs(curEigenvalue - prevEigenvalue) > PRECISION);
+			}
 			eigenvector = x;
 			eigenvalue = curEigenvalue;
 		}

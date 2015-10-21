@@ -9,7 +9,7 @@
   <criteria xmi:id="_-ltlIG55EeWja5z0vfT4PQ" name="Культура"/>
   <alternatives xmi:id="_TBRpMG5gEeW4kfk2g73vdQ" name="Ничего не менять"/>
   <alternatives xmi:id="_WqnHYG5gEeW4kfk2g73vdQ" name="Переехать в Москву"/>
-  <alternatives xmi:id="_5BmlsG5gEeW4kfk2g73vdQ" name="Переехать заграницу"/>
+  <alternatives xmi:id="_5BmlsG5gEeW4kfk2g73vdQ" name="Переехать за границу"/>
   <alternatives xmi:id="_HK0jIG5hEeW4kfk2g73vdQ" name="Фриланс"/>
   <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_XfKOsHZAEeW1Y7UnfM7nww" first="_GS8K0G5fEeW4kfk2g73vdQ" second="_H-JIYG5fEeW4kfk2g73vdQ" weight="1/5" goal="_ipAx0HPsEeWYFNxpRnaJ1w"/>
   <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_PDhCoHZBEeWdPpejN99V7g" first="_GS8K0G5fEeW4kfk2g73vdQ" second="_JGsr4G5fEeW4kfk2g73vdQ" weight="1/7" goal="_ipAx0HPsEeWYFNxpRnaJ1w"/>
@@ -48,45 +48,45 @@
   <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_K6B9YHZEEeWdPpejN99V7g" first="_TBRpMG5gEeW4kfk2g73vdQ" second="_HK0jIG5hEeW4kfk2g73vdQ" weight="3" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
   <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_MNko4HZEEeWdPpejN99V7g" first="_WqnHYG5gEeW4kfk2g73vdQ" second="_5BmlsG5gEeW4kfk2g73vdQ" weight="3" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
   <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_OUiVYHZEEeWdPpejN99V7g" first="_5BmlsG5gEeW4kfk2g73vdQ" second="_HK0jIG5hEeW4kfk2g73vdQ" weight="1/5" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yULFUHZsEeWP1fvL9Tndiw" value="0.05923555579283382" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_GS8K0G5fEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yULsYHZsEeWP1fvL9Tndiw" value="0.23233796535302847" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_H-JIYG5fEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yULsYXZsEeWP1fvL9Tndiw" value="0.38461693808392744" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_JGsr4G5fEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yULsYnZsEeWP1fvL9Tndiw" value="0.05552949366650561" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_8JHJMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yULsY3ZsEeWP1fvL9Tndiw" value="0.12203617227860758" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_j1IekG55EeWja5z0vfT4PQ"/>
-  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_yUMTcHZsEeWP1fvL9Tndiw" value="0.14624387482509696" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUWEcHZsEeWP1fvL9Tndiw" value="0.06030872842393513" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUWEcXZsEeWP1fvL9Tndiw" value="0.3328856238336675" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUbkAHZsEeWP1fvL9Tndiw" value="0.3328856238336675" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUhqoHZsEeWP1fvL9Tndiw" value="0.27392002390872977" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUhqonZsEeWP1fvL9Tndiw" value="0.673079645931018" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUhqo3ZsEeWP1fvL9Tndiw" value="0.07402153777214324" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRsHZsEeWP1fvL9Tndiw" value="0.06875478962680982" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRsXZsEeWP1fvL9Tndiw" value="0.18414402667002908" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRs3ZsEeWP1fvL9Tndiw" value="0.2584617701360452" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRtHZsEeWP1fvL9Tndiw" value="0.06345364892702592" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRtXZsEeWP1fvL9Tndiw" value="0.26370970869352184" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUiRtnZsEeWP1fvL9Tndiw" value="0.41437487224340713" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVAXZsEeWP1fvL9Tndiw" value="0.38098209847705655" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVAnZsEeWP1fvL9Tndiw" value="0.2792819340897208" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVA3ZsEeWP1fvL9Tndiw" value="0.11130411553716972" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVBHZsEeWP1fvL9Tndiw" value="0.22843185189605286" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVBnZsEeWP1fvL9Tndiw" value="0.09695287874159404" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVB3ZsEeWP1fvL9Tndiw" value="0.03653233559901056" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVCHZsEeWP1fvL9Tndiw" value="0.2031964553972686" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVCXZsEeWP1fvL9Tndiw" value="0.6633183302621268" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVC3ZsEeWP1fvL9Tndiw" value="0.17822856087193392" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUlVDHZsEeWP1fvL9Tndiw" value="0.28310851099981893" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUl8EHZsEeWP1fvL9Tndiw" value="0.2513766466103187" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_yUl8EXZsEeWP1fvL9Tndiw" value="0.2872862815179284" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_yUl8EnZsEeWP1fvL9Tndiw" value="0.31841548772884015" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_yUqNgHZsEeWP1fvL9Tndiw" value="0.12269156301776127" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_yUq0kHZsEeWP1fvL9Tndiw" value="0.20486050723097965" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
-  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_yUq0kXZsEeWP1fvL9Tndiw" value="0.3540324420224189" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
-  <inconsistencies xsi:type="ahp:GoalInconsistency" xmi:id="_yUMTcXZsEeWP1fvL9Tndiw" value="0.11367080440437986" goal="_ipAx0HPsEeWYFNxpRnaJ1w"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUUPQHZsEeWP1fvL9Tndiw" value="0.03371479014609867" criterion="_GS8K0G5fEeW4kfk2g73vdQ"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUhqoXZsEeWP1fvL9Tndiw" value="0.0211415863138818" criterion="_H-JIYG5fEeW4kfk2g73vdQ"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUiRsnZsEeWP1fvL9Tndiw" value="0.10122128952195651" criterion="_JGsr4G5fEeW4kfk2g73vdQ"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUlVAHZsEeWP1fvL9Tndiw" value="0.1398789693321211" criterion="_8JHJMG5gEeW4kfk2g73vdQ"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUlVBXZsEeWP1fvL9Tndiw" value="0.12696478696681412" criterion="_j1IekG55EeWja5z0vfT4PQ"/>
-  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_yUlVCnZsEeWP1fvL9Tndiw" value="0.9507327751940888" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzN1cHfoEeWww9iRzNHC6g" value="0.05923555579283382" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_GS8K0G5fEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzOcgHfoEeWww9iRzNHC6g" value="0.23233796535302847" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_H-JIYG5fEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzOcgXfoEeWww9iRzNHC6g" value="0.38461693808392744" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_JGsr4G5fEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzOcgnfoEeWww9iRzNHC6g" value="0.05552949366650561" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_8JHJMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzOcg3foEeWww9iRzNHC6g" value="0.12203617227860758" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_j1IekG55EeWja5z0vfT4PQ"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_JzOchHfoEeWww9iRzNHC6g" value="0.14624387482509696" goal="_ipAx0HPsEeWYFNxpRnaJ1w" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzOch3foEeWww9iRzNHC6g" value="0.06030872842393513" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDkHfoEeWww9iRzNHC6g" value="0.3328856238336675" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDkXfoEeWww9iRzNHC6g" value="0.3328856238336675" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDknfoEeWww9iRzNHC6g" value="0.27392002390872977" criterion="_GS8K0G5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDlHfoEeWww9iRzNHC6g" value="0.673079645931018" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDlXfoEeWww9iRzNHC6g" value="0.07402153777214324" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDlnfoEeWww9iRzNHC6g" value="0.06875478962680982" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPDl3foEeWww9iRzNHC6g" value="0.18414402667002908" criterion="_H-JIYG5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqoXfoEeWww9iRzNHC6g" value="0.2584617701360452" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqonfoEeWww9iRzNHC6g" value="0.06345364892702592" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqo3foEeWww9iRzNHC6g" value="0.26370970869352184" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqpHfoEeWww9iRzNHC6g" value="0.41437487224340713" criterion="_JGsr4G5fEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqpnfoEeWww9iRzNHC6g" value="0.38098209847705655" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqp3foEeWww9iRzNHC6g" value="0.2792819340897208" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzPqqHfoEeWww9iRzNHC6g" value="0.11130411553716972" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQRsHfoEeWww9iRzNHC6g" value="0.22843185189605286" criterion="_8JHJMG5gEeW4kfk2g73vdQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQRsnfoEeWww9iRzNHC6g" value="0.09695287874159404" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQRs3foEeWww9iRzNHC6g" value="0.03653233559901056" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQRtHfoEeWww9iRzNHC6g" value="0.2031964553972686" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQRtXfoEeWww9iRzNHC6g" value="0.6633183302621268" criterion="_j1IekG55EeWja5z0vfT4PQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQ4wXfoEeWww9iRzNHC6g" value="0.17822856087193392" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQ4wnfoEeWww9iRzNHC6g" value="0.28310851099981893" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQ4w3foEeWww9iRzNHC6g" value="0.2513766466103187" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_JzQ4xHfoEeWww9iRzNHC6g" value="0.2872862815179284" criterion="_-ltlIG55EeWja5z0vfT4PQ" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_JzQ4xXfoEeWww9iRzNHC6g" value="0.31841548772884015" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_TBRpMG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_JzQ4xnfoEeWww9iRzNHC6g" value="0.12269156301776127" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_WqnHYG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_JzQ4x3foEeWww9iRzNHC6g" value="0.20486050723097965" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_5BmlsG5gEeW4kfk2g73vdQ"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_JzQ4yHfoEeWww9iRzNHC6g" value="0.3540324420224189" goal="_ipAx0HPsEeWYFNxpRnaJ1w" alternative="_HK0jIG5hEeW4kfk2g73vdQ"/>
+  <inconsistencies xsi:type="ahp:GoalInconsistency" xmi:id="_JzOchXfoEeWww9iRzNHC6g" value="0.11367080440437986" goal="_ipAx0HPsEeWYFNxpRnaJ1w"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzOchnfoEeWww9iRzNHC6g" value="0.03371479014609867" criterion="_GS8K0G5fEeW4kfk2g73vdQ"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzPDk3foEeWww9iRzNHC6g" value="0.0211415863138818" criterion="_H-JIYG5fEeW4kfk2g73vdQ"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzPqoHfoEeWww9iRzNHC6g" value="0.10122128952195651" criterion="_JGsr4G5fEeW4kfk2g73vdQ"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzPqpXfoEeWww9iRzNHC6g" value="0.1398789693321211" criterion="_8JHJMG5gEeW4kfk2g73vdQ"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzQRsXfoEeWww9iRzNHC6g" value="0.12696478696681412" criterion="_j1IekG55EeWja5z0vfT4PQ"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_JzQ4wHfoEeWww9iRzNHC6g" value="0.9507327751940888" criterion="_-ltlIG55EeWja5z0vfT4PQ"/>
 </ahp:Hierarchy>

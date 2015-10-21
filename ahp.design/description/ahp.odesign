@@ -4,12 +4,12 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Hierarchy" initialisation="true" domainClass="ahp.Hierarchy" enablePopupBars="true">
       <defaultLayer name="Default">
         <edgeMappings name="Criteria" sourceMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']" targetMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Goal']" targetFinderExpression="aql:self.hierarchy.goal">
-          <style targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
+          <style targetArrow="NoDecoration" sizeComputationExpression="aql:self.getEdgeWidth()" endsCentering="Both">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </edgeMappings>
         <edgeMappings name="Alternatives" sourceMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Alternative']" targetMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']" targetFinderExpression="aql:self.hierarchy.criteria">
-          <style targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
+          <style targetArrow="NoDecoration" sizeComputationExpression="aql:self.getEdgeWidth(targetView)" endsCentering="Both">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </edgeMappings>
@@ -21,7 +21,7 @@
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
-            <conditionnalStyles predicateExpression="aql:let value = self.oclAsType(ahp::GoalInconsistency).value in 0.1 &lt; value and value &lt;= 0.2">
+            <conditionnalStyles predicateExpression="aql:0.1 &lt; self.value and self.value &lt;= 0.2">
               <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:self.toString()" labelPosition="node">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
@@ -29,7 +29,7 @@
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
-            <conditionnalStyles predicateExpression="aql:let value = self.oclAsType(ahp::GoalInconsistency).value in 0.2 &lt; value">
+            <conditionnalStyles predicateExpression="aql:0.2 &lt; self.value">
               <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:self.toString()" labelPosition="node">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
@@ -106,6 +106,80 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Overview" initialisation="true" domainClass="ahp.Hierarchy" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <edgeMappings name="Criteria" sourceMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Criterion']" targetMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Goal']" targetFinderExpression="aql:self.hierarchy.goal">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Alternatives" sourceMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Alternative']" targetMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Criterion']" targetFinderExpression="aql:self.hierarchy.criteria">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Goal" labelDirectEdit="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="ahp.Goal">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" heightComputationExpression="3" backgroundStyle="GradientTopToBottom">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Criterion" labelDirectEdit="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="ahp.Criterion">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" heightComputationExpression="3" backgroundStyle="GradientTopToBottom">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Alternative" labelDirectEdit="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="ahp.Alternative">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" heightComputationExpression="3" backgroundStyle="GradientTopToBottom">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools" label="Инструменты">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateGoal" label="Цель" precondition="aql:container.oclAsType(ahp::Hierarchy).goal = null" containerMappings="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Goal']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ahp.Goal" referenceName="goal"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateCriterion" label="Критерий" containerMappings="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Criterion']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container.oclAsType(ahp::Hierarchy).goal">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ahp.Criterion" referenceName="criteria"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateAlternative" label="Альтернатива" containerMappings="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Alternative']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container.oclAsType(ahp::Hierarchy).goal">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ahp.Alternative" referenceName="alternatives"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditName">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ExternalJavaAction" name="UpdatePriorities" label="Пересчитать приоритеты" elementsToSelect="aql:self" id="ahp.design.updatePrioritiesAction"/>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
     <ownedRepresentations xsi:type="description_2:CrossTableDescription" name="CriterionJudgmentMatrix" initialisation="true" domainClass="ahp.Hierarchy">
       <ownedLineMappings name="FirstCriterion" domainClass="ahp.Criterion" semanticCandidatesExpression="aql:self.criteria" headerLabelExpression="aql:self.name">
         <delete name="DeleteFirstCriterion" precondition="aql:false">
@@ -121,7 +195,7 @@
           <firstModelOperation xsi:type="tool_1:ChangeContext"/>
         </delete>
       </ownedColumnMappings>
-      <intersection name="Weight" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedLineMappings[name='FirstCriterion']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="aql:self.getWeightString()" useDomainClass="true" columnFinderExpression="aql:self.second" lineFinderExpression="aql:self.first" domainClass="ahp.CriterionJudgment" preconditionExpression="aql:self.print()">
+      <intersection name="Weight" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedLineMappings[name='FirstCriterion']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="aql:self.getWeightString()" useDomainClass="true" columnFinderExpression="aql:self.second" lineFinderExpression="aql:self.first" domainClass="ahp.CriterionJudgment">
         <directEdit>
           <variables name="element" documentation="The semantic currently edited element."/>
           <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
@@ -137,6 +211,9 @@
           </firstModelOperation>
           <mask mask="{0}"/>
         </directEdit>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+        </defaultBackground>
         <backgroundConditionalStyle predicateExpression="aql:not self.checkOperandsAreDifferent(null, null)">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
@@ -145,6 +222,16 @@
         <backgroundConditionalStyle predicateExpression="aql:not self.checkInverseJudgment(null, null)">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight > 1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight &lt; -1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </backgroundConditionalStyle>
       </intersection>
@@ -170,12 +257,22 @@
           <mask mask="{0}"/>
         </directEdit>
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight &lt; -1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight > 1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          </style>
+        </backgroundConditionalStyle>
       </intersection>
       <intersection name="Diagonal" canEdit="aql:false" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedLineMappings[name='FirstCriterion']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="1" useDomainClass="true" columnFinderExpression="aql:self" lineFinderExpression="aql:self" domainClass="ahp.Criterion" preconditionExpression="aql:self.hierarchy.getCriterionJudgment(line, column) = null">
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
       </intersection>
       <intersection name="Empty" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedLineMappings[name='FirstCriterion']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='CriterionJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="1" useDomainClass="true" columnFinderExpression="aql:self.criteria" lineFinderExpression="aql:self.criteria" semanticCandidatesExpression="aql:self" domainClass="ahp.Hierarchy" preconditionExpression="aql:let hierarchy = lineSemantic.oclAsType(ahp::Criterion).hierarchy in lineSemantic &lt;> columnSemantic and hierarchy.getCriterionJudgment(line, column) = null and hierarchy.getCriterionJudgment(column, line) = null">
@@ -223,7 +320,7 @@
           <mask mask="{0}"/>
         </directEdit>
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
         <backgroundConditionalStyle predicateExpression="aql:not self.checkOperandsAreDifferent(null, null)">
           <style>
@@ -233,6 +330,16 @@
         <backgroundConditionalStyle predicateExpression="aql:not self.checkInverseJudgment(null, null)">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight > 1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight &lt; -1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </backgroundConditionalStyle>
       </intersection>
@@ -258,12 +365,22 @@
           <mask mask="{0}"/>
         </directEdit>
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight &lt; -1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="aql:self.weight > 1">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          </style>
+        </backgroundConditionalStyle>
       </intersection>
       <intersection name="Diagonal" canEdit="aql:false" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativeJudgmentMatrix']/@ownedLineMappings[name='Criterion']/@ownedSubLines[name='FirstAlternative']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativeJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="1" useDomainClass="true" columnFinderExpression="aql:self.alternative" lineFinderExpression="aql:self" semanticCandidatesExpression="aql:self.criteria.getAlternatives()" domainClass="ahp.CriterionAlternative" preconditionExpression="aql:self.hierarchy.getAlternativeJudgment(line, column) = null">
         <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
       </intersection>
       <intersection name="Empty" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativeJudgmentMatrix']/@ownedLineMappings[name='Criterion']/@ownedSubLines[name='FirstAlternative']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativeJudgmentMatrix']/@ownedColumnMappings.0" labelExpression="1" useDomainClass="true" columnFinderExpression="aql:self.alternatives" lineFinderExpression="aql:self.criteria.getAlternatives()" semanticCandidatesExpression="aql:self" domainClass="ahp.Hierarchy" preconditionExpression="aql:let alternative = lineSemantic.oclAsType(ahp::CriterionAlternative).alternative in alternative &lt;> columnSemantic and alternative.hierarchy.getAlternativeJudgment(line, column) = null and alternative.hierarchy.getAlternativeJudgment(column, line) = null">
