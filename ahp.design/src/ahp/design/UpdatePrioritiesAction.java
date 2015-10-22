@@ -47,9 +47,7 @@ public class UpdatePrioritiesAction extends AbstractExternalJavaAction {
 		RecordingCommand cmd = new RecordingCommand(ted) {
 			@Override
 			protected void doExecute() {
-				//System.out.println(hierarchy.getPriorities().size());
 				hierarchy.updatePriorities();
-				//System.out.println(hierarchy.getPriorities().size());
 			}
 		};
 		ted.getCommandStack().execute(cmd);

@@ -106,7 +106,7 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Overview" initialisation="true" domainClass="ahp.Hierarchy" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Overview" domainClass="ahp.Hierarchy" enablePopupBars="true">
       <defaultLayer name="Default">
         <edgeMappings name="Criteria" sourceMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Criterion']" targetMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Overview']/@defaultLayer/@containerMappings[name='Goal']" targetFinderExpression="aql:self.hierarchy.goal">
           <style targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
@@ -405,6 +405,11 @@
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
         </defaultBackground>
       </intersection>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:CrossTableDescription" name="AlternativePriorityMatrix" domainClass="ahp.Hierarchy">
+      <ownedLineMappings name="Alternative" domainClass="ahp.Alternative" headerLabelExpression="feature:name"/>
+      <ownedColumnMappings name="Criterion" headerLabelExpression="feature:name" domainClass="ahp.Criterion"/>
+      <intersection name="Priority" lineMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativePriorityMatrix']/@ownedLineMappings[name='Alternative']" columnMapping="//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='AlternativePriorityMatrix']/@ownedColumnMappings.0" labelExpression="aql:self.toString()" useDomainClass="true" columnFinderExpression="aql:self.criterion" lineFinderExpression="aql:self.alternative" domainClass="ahp.CriterionAlternativePriority"/>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="ahp.design.Service"/>
   </ownedViewpoints>

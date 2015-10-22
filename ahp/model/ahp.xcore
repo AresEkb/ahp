@@ -37,7 +37,7 @@ class Hierarchy
 		priorities.clear
 		inconsistencies.clear
 
-		val mat = new JudgmentMatrix<Criterion>(criteria);
+		val mat = new JudgmentMatrix<Criterion>(criteria)
 		val criteriaJudgments = judgments.filter(typeof(CriterionJudgment)).filter(cj | cj.goal == goal)
 		for (judgment : criteriaJudgments) {
 			mat.set(judgment.first, judgment.second, judgment.weight)
@@ -163,11 +163,11 @@ abstract class Judgment<T>
             			"DIAGNOSTIC_SOURCE",
             			0,
             			"First and second must not be equal",
-            			null));
+            			null))
       		}
-      		return false;
+      		return false
     	}
-    	return true;
+    	return true
 	}
 	
 	op boolean checkInverseJudgment(EDiagnosticChain diagnostics, EMap<Object, Object> context)
@@ -180,11 +180,11 @@ abstract class Judgment<T>
             			"DIAGNOSTIC_SOURCE",
             			0,
             			"Wrong inverse judgment",
-            			null));
+            			null))
       		}
-      		return false;
+      		return false
     	}
-    	return true;
+    	return true
 	}
 	
 	op Judgment<?> getInverseJudgment()
