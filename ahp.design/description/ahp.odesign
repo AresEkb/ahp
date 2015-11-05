@@ -82,7 +82,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container.oclAsType(ahp::Hierarchy).goal">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ahp.Criterion" referenceName="criteria"/>
               </firstModelOperations>
             </initialOperation>
@@ -91,7 +91,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container.oclAsType(ahp::Hierarchy).goal">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="ocl:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ahp.Alternative" referenceName="alternatives"/>
               </firstModelOperations>
             </initialOperation>

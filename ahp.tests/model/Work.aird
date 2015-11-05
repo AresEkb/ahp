@@ -1866,7 +1866,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Goal']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Goal']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xIE8Hh_EeWLZMAQPof3HA" name="(11,37%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xIE8Hh_EeWLZMAQPof3HA" name="(11%)">
           <target xmi:type="ahp:GoalInconsistency" href="Work.ahp#_-cNk4Hh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:GoalInconsistency" href="Work.ahp#_-cNk4Hh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xJTEHh_EeWLZMAQPof3HA" showIcon="false" labelColor="154,103,23" labelPosition="node">
@@ -1894,7 +1894,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xQn0Hh_EeWLZMAQPof3HA" name="(3,37%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xQn0Hh_EeWLZMAQPof3HA" name="(3%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vyoMHh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vyoMHh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xRO4Hh_EeWLZMAQPof3HA" showIcon="false" labelColor="77,137,20" labelPosition="node">
@@ -1922,7 +1922,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xTEEHh_EeWLZMAQPof3HA" name="(2,11%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xTEEHh_EeWLZMAQPof3HA" name="(2%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vzPRHh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vzPRHh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xTrIHh_EeWLZMAQPof3HA" showIcon="false" labelColor="77,137,20" labelPosition="node">
@@ -1950,7 +1950,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xWHYHh_EeWLZMAQPof3HA" name="(10,12%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xWHYHh_EeWLZMAQPof3HA" name="(10%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vz2U3h_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-vz2U3h_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xWucHh_EeWLZMAQPof3HA" showIcon="false" labelColor="154,103,23" labelPosition="node">
@@ -1978,7 +1978,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xYjoHh_EeWLZMAQPof3HA" name="(13,99%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xYjoHh_EeWLZMAQPof3HA" name="(14%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v0dYHh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v0dYHh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xZKsHh_EeWLZMAQPof3HA" showIcon="false" labelColor="154,103,23" labelPosition="node">
@@ -2006,7 +2006,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xa_4Hh_EeWLZMAQPof3HA" name="(12,70%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xa_4Hh_EeWLZMAQPof3HA" name="(13%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v0dZXh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v0dZXh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xbm8Hh_EeWLZMAQPof3HA" showIcon="false" labelColor="154,103,23" labelPosition="node">
@@ -2034,7 +2034,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/ahp.design/description/ahp.odesign#//@ownedViewpoints[name='Analysis']/@ownedRepresentations[name='Hierarchy']/@defaultLayer/@containerMappings[name='Criterion']/@subNodeMappings[name='Priority']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xdcIHh_EeWLZMAQPof3HA" name="(95,07%)">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-xdcIHh_EeWLZMAQPof3HA" name="(95%)">
           <target xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v1EdHh_EeWLZMAQPof3HA"/>
           <semanticElements xmi:type="ahp:CriterionInconsistency" href="Work.ahp#_-v1EdHh_EeWLZMAQPof3HA"/>
           <ownedStyle xmi:type="diagram:Square" xmi:id="_-xeDMHh_EeWLZMAQPof3HA" showIcon="false" labelColor="239,41,41" labelPosition="node">

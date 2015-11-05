@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ahp:Hierarchy xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ahp="http://www.example.org/ahp" xmi:id="_k1tVMIOKEeWcwf_5L3q_8Q">
+  <goal xmi:id="_qMhB0IOKEeWcwf_5L3q_8Q" name="Принять какое-то решение"/>
+  <criteria xmi:id="_-3MhIIOKEeWcwf_5L3q_8Q" name="Одобрение руководства"/>
+  <criteria xmi:id="_BBpmgIOLEeWcwf_5L3q_8Q" name="Хорошие отношения с коллегой"/>
+  <criteria xmi:id="_BSCy8IOLEeWcwf_5L3q_8Q" name="Профессиональный рост"/>
+  <criteria xmi:id="_BpUDcIOLEeWcwf_5L3q_8Q" name="Свободное время"/>
+  <alternatives xmi:id="_GV68gIOLEeWcwf_5L3q_8Q" name="Ничего не делать"/>
+  <alternatives xmi:id="_HQIiAIOLEeWcwf_5L3q_8Q" name="Написать инструкцию"/>
+  <alternatives xmi:id="_Io8vEIOLEeWcwf_5L3q_8Q" name="Спросить на форуме"/>
+  <alternatives xmi:id="_I2T1oIOLEeWcwf_5L3q_8Q" name="Поговорить с коллегой"/>
+  <alternatives xmi:id="_LHP9gIOLEeWcwf_5L3q_8Q" name="Поговорить с руководством"/>
+  <alternatives xmi:id="_NuRqIIOLEeWcwf_5L3q_8Q" name="Обучить коллегу"/>
+  <alternatives xmi:id="_PQnmoIOLEeWcwf_5L3q_8Q" name="Предложить регламент по работе с паролями"/>
+  <alternatives xmi:id="_PfM1MIOLEeWcwf_5L3q_8Q" name="Настроить сервер ЭЦП"/>
+  <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_Uf5H4IOLEeWcwf_5L3q_8Q" first="_-3MhIIOKEeWcwf_5L3q_8Q" second="_BSCy8IOLEeWcwf_5L3q_8Q" weight="1/5" goal="_qMhB0IOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_VElwYIOLEeWcwf_5L3q_8Q" first="_-3MhIIOKEeWcwf_5L3q_8Q" second="_BpUDcIOLEeWcwf_5L3q_8Q" weight="1/5" goal="_qMhB0IOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_VxXW0IOLEeWcwf_5L3q_8Q" first="_BBpmgIOLEeWcwf_5L3q_8Q" second="_BSCy8IOLEeWcwf_5L3q_8Q" weight="1/7" goal="_qMhB0IOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:CriterionJudgment" xmi:id="_WR87YIOLEeWcwf_5L3q_8Q" first="_BBpmgIOLEeWcwf_5L3q_8Q" second="_BpUDcIOLEeWcwf_5L3q_8Q" weight="1/9" goal="_qMhB0IOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_eApscIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_HQIiAIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_fWon8IOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_gITVcIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_gu7QkIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_h7-SgIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_Io8vEIOLEeWcwf_5L3q_8Q" weight="5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_iWS3AIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_itDKIIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_jYOOEIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_jtqSkIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_kWtPkIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_noODoIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_n43HsIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_oJBqoIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_pCsdkIOLEeWcwf_5L3q_8Q" first="_PQnmoIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_pUBeIIOLEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_rLQskIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_r1TIEIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_sYBaoIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_slSakIOLEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_tfNFIIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_tquYoIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_uPLwkIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_vOTrQIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_vndLEIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_ysPKsIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_zfksIIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_0HtqMIOLEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_018CIIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_1igNMIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_2EJhsIOLEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_3eTykIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_3n7BkIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_4DnfEIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_4YdGoIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_47eUIIOLEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_6SS9IIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_6i2hoIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_6ur-MIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_6497kIOLEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_7keWsIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_8NSDIIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_Io8vEIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_8x7BQIOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_HQIiAIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_-l-Y0IOLEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="__BHcsIOLEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="__64WQIOLEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_AlJbQIOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_A5IHMIOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/9" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_Bbi3wIOMEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_BoEQ0IOMEeWcwf_5L3q_8Q" first="_PQnmoIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_CY4CsIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_CxhzQIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_DcQLQIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_DnOsMIOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_D5I7kIOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/7" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_EczpUIOMEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_FNLWUIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_FeVXwIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_Fs_e0IOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_F83G0IOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_G-Y1QIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_HKEg0IOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_H5NewIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_ITEwQIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_IpXwYIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_JMdPUIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_Io8vEIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_JspyUIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_HQIiAIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_K-XR0IOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_LJzs0IOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_LtS0YIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_Meu4YIOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_NOHG4IOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_NewK8IOMEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_NrCTcIOMEeWcwf_5L3q_8Q" first="_PQnmoIOLEeWcwf_5L3q_8Q" second="_PfM1MIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_OhD8gIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_PHH28IOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_PUaFAIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_Pip8YIOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_PuWPAIOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_QtcUgIOMEeWcwf_5L3q_8Q" first="_NuRqIIOLEeWcwf_5L3q_8Q" second="_PQnmoIOLEeWcwf_5L3q_8Q" weight="1/3" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_RyLvAIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_R-wycIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_SMHR8IOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_SpB3cIOMEeWcwf_5L3q_8Q" first="_I2T1oIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_S1Y4cIOMEeWcwf_5L3q_8Q" first="_LHP9gIOLEeWcwf_5L3q_8Q" second="_NuRqIIOLEeWcwf_5L3q_8Q" weight="5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_T0kdgIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_XUGfcIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_XgU9kIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_LHP9gIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_aBX-AIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_aVcJgIOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_ah9ikIOMEeWcwf_5L3q_8Q" first="_Io8vEIOLEeWcwf_5L3q_8Q" second="_I2T1oIOLEeWcwf_5L3q_8Q" weight="3" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_bMSR8IOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_Io8vEIOLEeWcwf_5L3q_8Q" weight="7" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_bdOQ8IOMEeWcwf_5L3q_8Q" first="_HQIiAIOLEeWcwf_5L3q_8Q" second="_Io8vEIOLEeWcwf_5L3q_8Q" weight="1/5" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <judgments xsi:type="ahp:AlternativeJudgment" xmi:id="_b8-IAIOMEeWcwf_5L3q_8Q" first="_GV68gIOLEeWcwf_5L3q_8Q" second="_HQIiAIOLEeWcwf_5L3q_8Q" weight="9" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_c4mCwIOMEeWcwf_5L3q_8Q" value="0.07704061815835402" goal="_qMhB0IOKEeWcwf_5L3q_8Q" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_c4mCwYOMEeWcwf_5L3q_8Q" value="0.06132048426049325" goal="_qMhB0IOKEeWcwf_5L3q_8Q" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_c4mp0IOMEeWcwf_5L3q_8Q" value="0.41561399612430755" goal="_qMhB0IOKEeWcwf_5L3q_8Q" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalCriterionPriority" xmi:id="_c4mp0YOMEeWcwf_5L3q_8Q" value="0.4460249014568451" goal="_qMhB0IOKEeWcwf_5L3q_8Q" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptIIOMEeWcwf_5L3q_8Q" value="0.035333625690854895" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_GV68gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptIYOMEeWcwf_5L3q_8Q" value="0.19383503270119495" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_HQIiAIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptIoOMEeWcwf_5L3q_8Q" value="0.03115854456847103" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_Io8vEIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptI4OMEeWcwf_5L3q_8Q" value="0.03115854456847103" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_I2T1oIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptJIOMEeWcwf_5L3q_8Q" value="0.08164124171601725" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_LHP9gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptJYOMEeWcwf_5L3q_8Q" value="0.05462218968219992" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_NuRqIIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptJoOMEeWcwf_5L3q_8Q" value="0.14306188710839074" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_PQnmoIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptJ4OMEeWcwf_5L3q_8Q" value="0.42918893396440017" criterion="_-3MhIIOKEeWcwf_5L3q_8Q" alternative="_PfM1MIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4ptKYOMEeWcwf_5L3q_8Q" value="0.05535519906390186" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_GV68gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUMIOMEeWcwf_5L3q_8Q" value="0.38410887380090963" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_HQIiAIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUMYOMEeWcwf_5L3q_8Q" value="0.051339084625659136" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_Io8vEIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUMoOMEeWcwf_5L3q_8Q" value="0.05661290025035502" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_I2T1oIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUM4OMEeWcwf_5L3q_8Q" value="0.01931829111543378" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_LHP9gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUNIOMEeWcwf_5L3q_8Q" value="0.33680819752261804" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_NuRqIIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUNYOMEeWcwf_5L3q_8Q" value="0.048228726810561236" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_PQnmoIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUNoOMEeWcwf_5L3q_8Q" value="0.048228726810561236" criterion="_BBpmgIOLEeWcwf_5L3q_8Q" alternative="_PfM1MIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUOIOMEeWcwf_5L3q_8Q" value="0.022737186270335122" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_GV68gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUOYOMEeWcwf_5L3q_8Q" value="0.0844911063109804" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_HQIiAIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUOoOMEeWcwf_5L3q_8Q" value="0.02674359970477819" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_Io8vEIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUO4OMEeWcwf_5L3q_8Q" value="0.04134609273821247" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_I2T1oIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUPIOMEeWcwf_5L3q_8Q" value="0.03517306953387048" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_LHP9gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUPYOMEeWcwf_5L3q_8Q" value="0.11477065560314947" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_NuRqIIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUPoOMEeWcwf_5L3q_8Q" value="0.226801027295385" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_PQnmoIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4qUP4OMEeWcwf_5L3q_8Q" value="0.44793726254328886" criterion="_BSCy8IOLEeWcwf_5L3q_8Q" alternative="_PfM1MIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7QYOMEeWcwf_5L3q_8Q" value="0.4911917804282076" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_GV68gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7QoOMEeWcwf_5L3q_8Q" value="0.05192376441703211" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_HQIiAIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7Q4OMEeWcwf_5L3q_8Q" value="0.17698921279064397" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_Io8vEIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7RIOMEeWcwf_5L3q_8Q" value="0.09904911119479848" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_I2T1oIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7RYOMEeWcwf_5L3q_8Q" value="0.11347918072841764" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_LHP9gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7RoOMEeWcwf_5L3q_8Q" value="0.025594599611656315" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_NuRqIIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7R4OMEeWcwf_5L3q_8Q" value="0.027507600449300843" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_PQnmoIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:CriterionAlternativePriority" xmi:id="_c4q7SIOMEeWcwf_5L3q_8Q" value="0.014264750379943007" criterion="_BpUDcIOLEeWcwf_5L3q_8Q" alternative="_PfM1MIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riUIOMEeWcwf_5L3q_8Q" value="0.23465019028627412" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_GV68gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riUYOMEeWcwf_5L3q_8Q" value="0.09676189112851476" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_HQIiAIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riUoOMEeWcwf_5L3q_8Q" value="0.09560522160312877" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_Io8vEIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riU4OMEeWcwf_5L3q_8Q" value="0.06723438888031519" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_I2T1oIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riVIOMEeWcwf_5L3q_8Q" value="0.07270725908202719" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_LHP9gIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riVYOMEeWcwf_5L3q_8Q" value="0.08397748861591836" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_NuRqIIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4riVoOMEeWcwf_5L3q_8Q" value="0.12050974116006852" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_PQnmoIOLEeWcwf_5L3q_8Q"/>
+  <priorities xsi:type="ahp:GoalAlternativePriority" xmi:id="_c4sJYIOMEeWcwf_5L3q_8Q" value="0.22855381924375298" goal="_qMhB0IOKEeWcwf_5L3q_8Q" alternative="_PfM1MIOLEeWcwf_5L3q_8Q"/>
+  <inconsistencies xsi:type="ahp:GoalInconsistency" xmi:id="_c4mp0oOMEeWcwf_5L3q_8Q" value="0.012145336011846855" goal="_qMhB0IOKEeWcwf_5L3q_8Q"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_c4ofAIOMEeWcwf_5L3q_8Q" value="0.07314931766550296" criterion="_-3MhIIOKEeWcwf_5L3q_8Q"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_c4ptKIOMEeWcwf_5L3q_8Q" value="0.050809129643196366" criterion="_BBpmgIOLEeWcwf_5L3q_8Q"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_c4qUN4OMEeWcwf_5L3q_8Q" value="0.06734490469171747" criterion="_BSCy8IOLEeWcwf_5L3q_8Q"/>
+  <inconsistencies xsi:type="ahp:CriterionInconsistency" xmi:id="_c4q7QIOMEeWcwf_5L3q_8Q" value="0.1623193439180914" criterion="_BpUDcIOLEeWcwf_5L3q_8Q"/>
+</ahp:Hierarchy>
